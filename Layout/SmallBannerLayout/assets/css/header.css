@@ -1,0 +1,127 @@
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: #f8f8f8;
+  height: 3.5rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: #fff;
+  height: 8rem;
+}
+.header__slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.header__slogan-text {
+  color: #858585;
+  font-size: 1.3rem;
+  line-height: 2.7rem;
+  margin-left: 0.8rem;
+}
+.header__hotline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 166px;
+  height: 25px;
+  background-color: #e5e5e5;
+  border-radius: 2rem;
+}
+.header__hotline-icon {
+  font-size: 1.5rem;
+}
+.header__hotline-text {
+  font-size: 1.3rem;
+  color: #858585;
+  margin-left: 0.7rem;
+}
+.header__hotline-num {
+  font-weight: 500;
+  color: #000;
+}
+
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.nav__item {
+  margin-left: 3.9rem;
+}
+.nav__item-link {
+  color: #363636;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: all ease 0.2s;
+}
+.nav__item-link:hover {
+  color: #6fa052;
+}
+.nav__item-link > i {
+  margin-left: 0.7rem;
+}
+.nav__dropdown {
+  display: none;
+  position: absolute;
+  top: 200%;
+  left: -20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+.nav__dropdown::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99;
+}
+.nav__dropdown::before:hover ~ .drop-down {
+  color: #6fa052;
+}
+.nav__dropdown-list {
+  min-width: 20rem;
+  min-height: 27rem;
+  background-color: #fff;
+}
+.nav__dropdown-item {
+  width: 100%;
+  height: 100%;
+}
+.nav__dropdown-item-link {
+  display: block;
+  font-size: 1.5rem;
+  color: #444455;
+  padding: 1.3rem 2.4rem;
+  transition: all ease 0.2s;
+}
+.nav__dropdown-item-link:hover {
+  background-color: #f8f8f8;
+  color: #6fa052;
+}
+
+.drop-down {
+  position: relative;
+  transition: all ease 0.3s;
+}
+.drop-down:hover .nav__item-link {
+  color: #6fa052;
+}
+.drop-down:hover .nav__dropdown {
+  display: block;
+}

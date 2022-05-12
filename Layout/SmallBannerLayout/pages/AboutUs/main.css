@@ -1,0 +1,97 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.banner__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: #fff;
+  font-size: 4.8rem;
+}
+.banner__bg {
+  width: 100%;
+  object-fit: cover;
+}
+.banner__overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.banner__overlay > img {
+  position: absolute;
+  top: 0;
+  left: unset;
+}
+.banner__overlay-primary {
+  width: 100%;
+  height: 250px;
+}
+.banner__overlay-2 {
+  right: 13%;
+}
+.banner__overlay-3 {
+  right: 0;
+}
+.banner__bg {
+  width: 100% !important;
+  height: 250px;
+  object-fit: cover;
+}
+.banner__inner {
+  position: absolute;
+  top: 134px;
+  left: 155px;
+}
+
+.introduce {
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+}
+.introduce-odd {
+  background-color: #fff;
+}
+.introduce-even {
+  background-color: #f8f8f8;
+}
+.introduce img {
+  width: 100%;
+  object-fit: cover;
+}
+.introduce__info-odd {
+  margin-right: 0.6rem;
+}
+.introduce__info-even {
+  margin-left: 0.6rem;
+}
+.introduce__info-title {
+  font-size: 3.2rem;
+  line-height: 3rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 2.4rem;
+}
+.introduce__info-content {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+.introduce__img > img {
+  transition: all ease 0.3s;
+}
+.introduce__img > img:hover {
+  transform: scale(0.95);
+}
+
+/*# sourceMappingURL=main.css.map */

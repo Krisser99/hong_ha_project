@@ -1,0 +1,84 @@
+// variable color
+$text-color1: #363636;
+$text-color2: #222222;
+$text-color3: #a1a1a1;
+
+$brand-color1: #6fa052;
+$brand-color2: #363636;
+
+$support-color: #f8f8f8;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+/* Mobie */
+@media (max-width: 36em) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .banner {
+    margin-top: calc(7.9rem - 3.5rem);
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  .flex-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .introduce{
+    &__info {
+      &-title {
+        text-align: center;
+      }
+      &-content {
+        text-align: justify;
+      }
+    }
+    &__img {
+      margin-top: 1.5rem;
+    }
+  }
+  
+  
+}
+
+/* Mobie & Tablet */
+@media (min-width: 36.0625em) and (max-width: 74.9375em) {
+  .hide-on-tablet-mobie {
+    display: none;
+  }
+  .banner {
+    margin-top: calc(7.9rem - 3.5rem);
+  }
+  .introduce{
+    &__info {
+      &-title {
+        text-align: center;
+      }
+      &-content {
+        text-align: justify;
+      }
+    }
+    &__img {
+      margin-top: 1.5rem;
+    }
+  }
+}
+/* Tablet */
+@media (min-width: 36.0625em) and (max-width: 62em) {
+  .hide-on-tablet{
+    display: none;
+  }
+  .flex-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+
+/* PC */
+@media (min-width: 75em) {
+  .hide-on-pc {
+    display: none;
+  }
+}
