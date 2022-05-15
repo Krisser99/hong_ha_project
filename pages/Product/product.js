@@ -1,7 +1,5 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
-
-
 // Show/hide menu mobile
 
 const menuMobileEl = $('.mobile__menu')
@@ -24,8 +22,8 @@ closeMobileEl.addEventListener('click', handleHideMobileNav)
 const scrollEl = $('.scroll')
 
 const handleGoToTop = () => {
-  
-  if(window.scrollY >= 300) {
+
+  if (window.scrollY >= 300) {
     scrollEl.classList.add('active')
   } else {
     scrollEl.classList.remove('active')
@@ -34,16 +32,27 @@ const handleGoToTop = () => {
 
 
 scrollEl.addEventListener('click', () => {
-  window.scrollTo({top: 0, behavior: 'smooth'})
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 window.addEventListener('scroll', handleGoToTop)
+
+// activeNavLink
+const activePage = window.location.pathname;
+
+const navLinks = $$('.nav__item-link')
+
+console.log(navLinks)
+navLinks.forEach(link => {
+  if(link.href.includes(`${activePage}`)) {
+    link.classList.add('active')
+  }
+})
 
 // sticky
 
 const productNavEl = $('.product-nav')
 
 let shouldStickyPosition = productNavEl.offsetTop
-console.log(shouldStickyPosition)
 
 const addOrRemoveStickyClass = () => {
   if (window.pageYOffset >= shouldStickyPosition) {

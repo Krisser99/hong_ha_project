@@ -67,6 +67,9 @@
   padding: 0.5rem;
   transition: all ease 0.2s;
 }
+.nav__item-link.active {
+  color: #6fa052;
+}
 .nav__item-link:hover {
   color: #6fa052;
 }

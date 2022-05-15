@@ -56,6 +56,7 @@ table {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -227,7 +228,7 @@ a:-webkit-any-link {
   }
 
   .banner {
-    margin-top: 4.4rem;
+    margin-top: 8.4rem;
   }
 }
 /* Tablet */
@@ -333,7 +334,7 @@ a:-webkit-any-link {
   }
 
   .footer__social {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 /* Mobie & Tablet */
@@ -419,10 +420,6 @@ a:-webkit-any-link {
 
   .drop-down:hover .nav__dropdown {
     display: none;
-  }
-
-  .footer__social {
-    margin-bottom: 2rem;
   }
 }
 /* PC */

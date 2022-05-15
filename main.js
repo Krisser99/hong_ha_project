@@ -1,9 +1,15 @@
+// Slide Banner
 var owl = $('.owl-carousel');
 owl.owlCarousel({
   nav: false,
   items: 1,
   loop: true,
+  autoplay: true,
+  autoplayHoverPause: true,
+  autoplayTimeout: 7000,
+  autoplaySpeed: 600,
 });
+
 // Go to the next item
 $('.banner__switch-right').click(function () {
   owl.trigger('next.owl.carousel', [600]);

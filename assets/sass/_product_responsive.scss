@@ -7,6 +7,12 @@ $brand-color1: #6fa052;
 $brand-color2: #363636;
 
 $support-color: #f8f8f8;
+@mixin flexbox($align: flex-start, $justify: flex-start, $dir: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $dir;
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1180px;
@@ -15,9 +21,7 @@ $support-color: #f8f8f8;
 
 /* PC */
 @media (min-width: 75em) {
-
 }
-
 
 /* Mobie & Tablet */
 @media (max-width: 74.9375em) {
@@ -33,7 +37,8 @@ $support-color: #f8f8f8;
         position: fixed;
         top: 7.84rem;
         left: 0;
-        z-index: 9999;
+        z-index: 99;
+        box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
         width: 100%;
       }
       &__list {
@@ -50,12 +55,59 @@ $support-color: #f8f8f8;
         }
       }
     }
+    &-introduce {
+      padding: 12rem 0;
+    }
+    &-app {
+      padding-top: 16rem;
+    }
+    &-feature {
+      padding-top: 16rem;
+    }
+    &-nac {
+      padding-top: 16rem;
+    }
+    &-info {
+      padding-top: 16rem;
+    }
+    &-certificate {
+      padding-top: 16rem;
+    }
+    &-why {
+      padding-top: 16rem;
+    }
+    &-specification {
+      padding-top: 16rem;
+    }
+  }
+  .product-introduce__info {
+    & > p {
+      margin-bottom: 2rem;
+    }
   }
   .product-app__child {
     height: 38rem;
+    margin-bottom: 3rem;
   }
   .product-app__overlay {
     width: 100%;
+  }
+  .product-certificate {
+    &__child {
+      @include flexbox(center, center);
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  .product-specification {
+    &__table {
+      &-first {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .product-download__link {
+    margin-bottom: 2rem;
   }
 }
 

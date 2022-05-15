@@ -1,3 +1,4 @@
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -24,8 +25,8 @@ closeMobileEl.addEventListener('click', handleHideMobileNav)
 const scrollEl = $('.scroll')
 
 const handleGoToTop = () => {
-  
-  if(window.scrollY >= 300) {
+
+  if (window.scrollY >= 300) {
     scrollEl.classList.add('active')
   } else {
     scrollEl.classList.remove('active')
@@ -34,6 +35,39 @@ const handleGoToTop = () => {
 
 
 scrollEl.addEventListener('click', () => {
-  window.scrollTo({top: 0, behavior: 'smooth'})
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 window.addEventListener('scroll', handleGoToTop)
+
+// Switch News Page
+let activeNewsPage = window.location.pathname;
+
+const pageLink = $$('.news__switch-btn')
+
+console.log(activeNewsPage)
+pageLink.forEach(link => {
+  
+  console.log(`${activeNewsPage}`)
+  if(link.href.includes(`${activeNewsPage}`)) {
+    link.classList.add('active')
+  }
+})
+
+
+
+// activeNavLink
+const activePage = window.location.pathname;
+
+const navLinks = $$('.nav__item-link')
+
+console.log(navLinks)
+navLinks.forEach(link => {
+  if(link.href.includes(`${activePage}`)) {
+    link.classList.add('active')
+  }
+})
+
+
+
+
+

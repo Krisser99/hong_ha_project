@@ -24,8 +24,12 @@ $support-color: #f8f8f8;
       font-size: 4rem;
     }
   }
-  
-  
+  .news__body {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+  .news__switch-wrap > a {
+    
+  }
 }
 
 /* Mobie & Tablet */
@@ -34,8 +38,9 @@ $support-color: #f8f8f8;
     display: none;
   }
   .banner {
-    margin-top: calc(7.9rem - 3.5rem);
+    margin-top: 8.4rem;
   }
+  
 }
 /* Tablet */
 @media (min-width: 36.0625em) and (max-width: 62em) {
