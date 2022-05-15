@@ -1,0 +1,73 @@
+// variable color
+$text-color1: #363636;
+$text-color2: #222222;
+$text-color3: #a1a1a1;
+
+$brand-color1: #6fa052;
+$brand-color2: #363636;
+
+$support-color: #f8f8f8;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+/* PC */
+@media (min-width: 75em) {
+
+}
+
+
+/* Mobie & Tablet */
+@media (max-width: 74.9375em) {
+  .hide-on-tablet-mobile {
+    display: none;
+  }
+  .banner {
+    margin-top: 8.4rem;
+  }
+  .product {
+    &-nav {
+      &.sticky {
+        position: fixed;
+        top: 7.84rem;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+      }
+      &__list {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        scroll-behavior: smooth;
+        overflow-x: auto;
+      }
+      &__item {
+        flex-shrink: 0;
+        & > a {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+  .product-app__child {
+    height: 38rem;
+  }
+  .product-app__overlay {
+    width: 100%;
+  }
+}
+
+/* Mobie */
+@media (max-width: 36em) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .banner {
+    margin-top: 8.4rem;
+    &__title {
+      font-size: 4rem;
+    }
+  }
+}

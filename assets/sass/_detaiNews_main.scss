@@ -1,0 +1,148 @@
+@mixin flexbox($align: flex-start, $justify: flex-start, $dir: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $dir;
+}
+
+// detail News
+
+.detail-news {
+  background-color: #f8f8f8;
+  padding: 8rem 0;
+  &__info {
+    background-color: #fff;
+    padding-bottom: 10rem;
+    & > img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &-child {
+      padding: 3rem;
+      & > p {
+        color: #363636;
+        font-size: 1.7rem;
+        line-height: 3rem;
+      }
+    }
+  }
+  &__time {
+    font-size: 1.3rem;
+    color: #c4c4c4;
+    margin-bottom: 1.6rem;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    color: #000;
+    margin-bottom: 3.4rem;
+  }
+  &__social {
+    padding: 2rem 3rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    background-color: #fff;
+    @include flexbox(center);
+    & > span {
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      color: #000;
+    }
+    & > a {
+      text-decoration: none;
+      @include flexbox(center, center);
+    }
+    & > a > img {
+      object-fit: cover;
+      margin-left: 2rem;
+    }
+  }
+  &__sidebar {
+    background-color: #fff;
+    padding: 3rem;
+    &-search {
+      display: flex;
+      height: 4.5rem;
+      padding: 1.4rem;
+      color: #f8f8f8;
+      background-color: #f8f8f8;
+      border: 1px solid #e5e5e5;
+      margin-bottom: 2.3rem;
+      & > input {
+        color: #a1a1a1;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        flex: 1;
+      }
+      & > button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        & > img {
+          object-fit: cover;
+        }
+      }
+    }
+    &-title {
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: #000;
+      margin-bottom: 0.8rem;
+    }
+    & > h3 {
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: #000;
+      margin-top: 4rem;
+    }
+    &-list {
+      margin-left: 1.5rem;
+    }
+    &-item {
+      & > a {
+        display: block;
+        padding: 1.6rem 0;
+        color: #406FB5;
+        border-bottom: 1px solid #E5E5E5;
+        &:hover {
+          text-decoration: underline;
+        }
+        &::before {
+          content: "\2022";
+          color:#406FB5;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+  &__store {
+    &-list {
+      margin-top: 0.8rem;
+      margin-left: 1.5rem;
+      & > li > a {
+        display: block;
+        color: #363636;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+        &::before {
+          content: "\2022";
+          color:#363636;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+    
+  }
+}
