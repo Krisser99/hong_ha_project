@@ -125,8 +125,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 1.3rem;
-  border: 1px solid #505050;
+  position: relative;
 }
 .footer__email > input {
   width: 100%;
@@ -135,7 +134,8 @@
   color: #e5e5e5;
   background-color: #222222;
   outline: none;
-  border: none;
+  padding: 1.3rem;
+  border: 1px solid #505050;
 }
 .footer__email > button {
   display: flex;
@@ -146,6 +146,10 @@
   outline: none;
   background-color: transparent;
   margin-left: 5px;
+  position: absolute;
+  right: 1.7rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .footer__border-top {
   border-top: 1px solid #333333;

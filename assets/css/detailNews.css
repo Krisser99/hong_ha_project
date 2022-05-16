@@ -276,7 +276,7 @@ a:-webkit-any-link {
     height: 100vh;
     transform: translateX(100%);
     transition: all ease 0.3s;
-    overflow-x: auto;
+    overflow-y: auto;
     z-index: 999;
   }
   .nav.active {
@@ -329,6 +329,14 @@ a:-webkit-any-link {
 
   .footer__social {
     margin-bottom: 1rem;
+  }
+
+  .footer__contact {
+    margin-bottom: 3rem;
+  }
+
+  .footer__detail {
+    margin-bottom: 3rem;
   }
 }
 /* Mobie & Tablet */
@@ -414,6 +422,14 @@ a:-webkit-any-link {
 
   .drop-down:hover .nav__dropdown {
     display: none;
+  }
+
+  .footer__contact {
+    margin-bottom: 3rem;
+  }
+
+  .footer__detail {
+    margin-bottom: 3rem;
   }
 }
 /* PC */

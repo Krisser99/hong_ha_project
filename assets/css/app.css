@@ -399,6 +399,10 @@ a:-webkit-any-link {
     display: none;
   }
 
+  .banner {
+    margin-top: 8.4rem;
+  }
+
   .news__body-child {
     margin-bottom: 2rem;
   }
@@ -504,6 +508,14 @@ a:-webkit-any-link {
   .footer__social {
     margin-bottom: 1rem;
   }
+
+  .footer__contact {
+    margin-bottom: 3rem;
+  }
+
+  .footer__detail {
+    margin-bottom: 3rem;
+  }
 }
 /* Mobie & Tablet */
 @media (min-width: 36.0625em) and (max-width: 74.9375em) {
@@ -588,6 +600,14 @@ a:-webkit-any-link {
 
   .drop-down:hover .nav__dropdown {
     display: none;
+  }
+
+  .footer__contact {
+    margin-bottom: 3rem;
+  }
+
+  .footer__detail {
+    margin-bottom: 3rem;
   }
 }
 /* PC */

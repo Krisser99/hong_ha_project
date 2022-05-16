@@ -104,6 +104,12 @@ $support-color: #f8f8f8;
   .footer__social {
     margin-bottom: 1rem;
   }
+  .footer__contact {
+    margin-bottom: 3rem;
+  }
+  .footer__detail {
+    margin-bottom: 3rem;
+  }
 }
 
 /* Mobie & Tablet */
@@ -190,6 +196,12 @@ $support-color: #f8f8f8;
   }
   .drop-down:hover .nav__dropdown {
     display: none;
+  }
+  .footer__contact {
+    margin-bottom: 3rem;
+  }
+  .footer__detail {
+    margin-bottom: 3rem;
   }
 
 }
