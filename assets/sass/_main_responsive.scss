@@ -33,6 +33,9 @@ $support-color: #f8f8f8;
   .news__body-child {
     margin-bottom: 2rem;
   }
+  .product__body {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
 }
 
 /* Mobie & Tablet */

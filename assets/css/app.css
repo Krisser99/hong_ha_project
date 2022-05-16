@@ -388,6 +388,10 @@ a:-webkit-any-link {
   .news__body-child {
     margin-bottom: 2rem;
   }
+
+  .product__body {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
 }
 /* Mobie & Tablet */
 @media (min-width: 36.0625em) and (max-width: 74.9375em) {
@@ -446,6 +450,7 @@ a:-webkit-any-link {
     height: 100vh;
     transform: translateX(100%);
     transition: all ease 0.3s;
+    overflow-y: auto;
     z-index: 999;
   }
   .nav.active {
@@ -454,6 +459,7 @@ a:-webkit-any-link {
   .nav__list {
     width: 300px;
     background-color: #a1a1a1;
+    padding-bottom: 3rem;
     flex-direction: column;
   }
   .nav__item {
