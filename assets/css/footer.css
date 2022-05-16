@@ -163,6 +163,10 @@
   font-size: 1.4rem;
   margin-right: 4rem;
 }
+.footer__social-wrap {
+  display: flex;
+  align-items: center;
+}
 .footer__social-wrap > a {
   margin-right: 25px;
 }

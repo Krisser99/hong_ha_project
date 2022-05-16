@@ -276,6 +276,7 @@ a:-webkit-any-link {
     height: 100vh;
     transform: translateX(100%);
     transition: all ease 0.3s;
+    overflow-x: auto;
     z-index: 999;
   }
   .nav.active {
@@ -284,6 +285,7 @@ a:-webkit-any-link {
   .nav__list {
     width: 300px;
     background-color: #a1a1a1;
+    padding-bottom: 3rem;
     flex-direction: column;
   }
   .nav__item {

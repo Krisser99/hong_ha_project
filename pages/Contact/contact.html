@@ -183,9 +183,18 @@
             <div class="col-12 col-md-5">
               <div id="form">
                 <form id="contact__form" class="contact__form" action="" method="post" target="_self">
-                  <input id="contact__name" name="name" type="text" placeholder="Họ tên*">
-                  <input id="contact__email" name="email" type="email" placeholder="Email*">
-                  <input id="contact__phone" name="phone" type="text" placeholder="Số điện thoại*">
+                  <div class="contact__form-control">
+                    <input id="username" name="name" type="text" placeholder="Họ tên*">
+                    <small></small>
+                  </div>
+                  <div class="contact__form-control">
+                    <input id="email" name="email" type="email" placeholder="Email*">
+                    <small></small>
+                  </div>
+                  <div class="contact__form-control">
+                    <input id="phone" name="phone" type="text" placeholder="Số điện thoại*">
+                    <small></small>
+                  </div>
                   <textarea id="contact__content" name="content" type="text" placeholder="Nội dung"></textarea>
                   <button type="submit" class="btn contact__form-btn">Gửi</button>
                 </form>
@@ -317,8 +326,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./owl.carousel.min.js"></script>
-  <script src="./main.js"></script>
-  <script src="../../index.js"></script>
+  <script src="./contact.js"></script>
 </body>
 
 </html>

@@ -71,5 +71,15 @@ window.onresize = () => {
   console.log(shouldStickyPosition)
 }
 
+// activeNavLink
+const activeProductChild = window.location.pathname;
 
+const navLinkChild = $$('.nav__dropdown-item-link')
+
+console.log(navLinkChild)
+navLinkChild.forEach(link => {
+  if(link.href.includes(`${activeProductChild}`)) {
+    link.classList.add('active')
+  }
+})
 
