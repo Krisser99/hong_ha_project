@@ -47,6 +47,7 @@ $support-color: #f8f8f8;
     height: 100vh;
     transform: translateX(100%);
     transition: all ease 0.3s;
+    overflow-x: auto;
     z-index: 999;
     &.active {
       transform: translateX(0);
@@ -54,6 +55,7 @@ $support-color: #f8f8f8;
     &__list {
       width: 300px;
       background-color: #a1a1a1;
+      padding-bottom: 3rem;
       flex-direction: column;
     }
     &__item {
