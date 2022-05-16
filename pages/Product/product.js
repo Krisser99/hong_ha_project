@@ -1,5 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
+
+
 // Show/hide menu mobile
 
 const menuMobileEl = $('.mobile__menu')
@@ -35,6 +37,7 @@ scrollEl.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 })
 window.addEventListener('scroll', handleGoToTop)
+
 
 // activeNavLink
 const activePage = window.location.pathname;
