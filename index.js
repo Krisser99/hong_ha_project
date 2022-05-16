@@ -47,7 +47,6 @@ const pageLink = $$('.news__switch-btn')
 console.log(activeNewsPage)
 pageLink.forEach(link => {
   
-  console.log(`${activeNewsPage}`)
   if(link.href.includes(`${activeNewsPage}`)) {
     link.classList.add('active')
   }
@@ -60,7 +59,6 @@ const activePage = window.location.pathname;
 
 const navLinks = $$('.nav__item-link')
 
-console.log(navLinks)
 navLinks.forEach(link => {
   if(link.href.includes(`${activePage}`)) {
     link.classList.add('active')
